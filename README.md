@@ -1,71 +1,28 @@
-# Project Overview
-Welcome to our project! This project is built using FastAPI framework to create a fast and modern API with Python.
+# Neo4j Knowledge Graph Builder
 
-## Feature
-API Endpoint : This project provides various API endpoint to perform specific tasks.
-Data Validation : Utilize FastAPI data validation and serialization feature.
-Interactive Documentation : Access Swagger UI and ReDoc for interactive API documentation.
-
-## Getting Started 
-
-Follow these steps to set up and run the project locally:
-
-1. Clone the Repository:
-
-> git clone https://github.com/neo4j-labs/llm-graph-builder.git
-
-> cd llm-graph-builder
-
-2. Install Dependency :
-
-> pip install -t requirements.txt
-
-## Run backend project using unicorn
-Run the server:
-> uvicorn score:app --reload
-
-## Run project using docker
-## prerequisite 
-Before proceeding, ensure the following software is installed on your machine
-
-Docker: https://www.docker.com/
-
-1. Build the docker image
-   > docker build -t your_image_name .
-   
-   Replace `your_image_name` with the meaningful name for your Docker image
-
-2. Run the Docker Container
-   > docker run -it -p 8000:8000 your_image_name
-   
-   Replace `8000` with the desired port.
-
-## Access the API Documentation
-Open your browser and navigate to
-http://127.0.0.1:8000/docs for Swagger UI or
-http://127.0.0.1:8000/redocs for ReDoc.
-
-## Project Structure
-`score.py`: Score entry point for FastAPI application
-
-## Configuration
-
-Update the environment variable in `.env` file.
-
-`OPENAI_API_KEY`: Open AI key to use LLM
-
-`DIFFBOT_API_KEY` : Diffbot API key to use DiffbotGraphTransformer
-
-`NEO4J_URI` : Neo4j URL
-
-`NEO4J_USERNAME` : Neo4J database username
-
-`NEO4J_PASSWORD` : Neo4j database user password
-
-`AWS_ACCESS_KEY_ID` : AWS Access key ID
-
-`AWS_SECRET_ACCESS_KEY` : AWS secret access key
+Reactjs app for building an knowledge graph using [Neo4j Needle](https://www.neo4j.design/).
+    
+## Features
+- 🚀 Responsive: Adapts to different screen sizes for optimal user experience.
+- ⚙️ Neo4j Integration: A simple example for connecting to a Neo4j database.
+- 🔐 Neo4j Auto-connect: Automatically connects to the Neo4j database if the user has a session saved (using localStorage).
+- 💻 Dropzone: To drop pdf or txt files.
+- 💻 Table : To show uploaded files and generate knowledge graph.
+- 🛠️️ Modular approach: Facilitates easy customization.
 
 
-## Contact
-For questions or support, feel free to contact us at christopher.crosbie@neo4j.com or michael.hunger@neo4j.com
+## Installation:
+```shell
+npm install -g yarn
+yarn i
+yarn run dev
+```
+
+##
+Do run yarn add -- package name to get project updated with required dependencies.
+
+29/01/2024> Latest dependency
+yarn add uuid 
+##
+Upload api url should be picked from: ports tab under codespace environement // For demo
+## What it looks like
